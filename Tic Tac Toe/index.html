@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+       body{
+        background-color: aqua;
+        text-align: center;
+       }
+       .container{
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .game{
+        height: 60vmin;
+        width: 60vmin;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px;
+       }
+       .box{
+        height: 18vmin;
+        width: 18vmin;
+        border-radius: 10px;
+        border: none;
+        font-size: 4rem;
+        background-color: rgb(35, 209, 50);
+        color: rgb(11, 11, 137);
+       }
+       #reset-btn,#newbutton{
+         padding: 7px;
+         border-radius: 5px;
+         border: none;
+         font-size: 20px;
+         background-color: rgb(37, 34, 34);
+         color: #fff;
+         cursor: pointer;
+       }
+       #msg{
+        font-size: 3rem;
+        color: green;
+       }
+       .msg-container{
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+       .hide{
+        display: none;
+       }
+    </style>
+</head>
+</body> 
+   <div class="msg-container hide">
+      <p id="msg">Winner</p>
+      <button id="newbutton">New Game</button>
+   </div>
+
+   <main>
+     <h1>Tic Tac Toe</h1>
+     <div class="container">
+        <div class="game">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>
+     </div>
+     <button id="reset-btn">Reset Game</button>
+   </main>
+   <script src="ap.js"></script>
+</body>
+</html>
